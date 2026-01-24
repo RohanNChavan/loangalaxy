@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen - Smart Loans & Credit Solutions</title>
+  <meta name="description" content="NextGen helps you compare and apply for loans and credit solutions quickly and securely." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="NextGen" class="logo" />
+        <span class="brand-name">NextGen</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#apply" class="btn btn-small">Apply Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <p class="pill">Fast • Secure • Hassle-free</p>
+        <h1>Get the right loan,<br />the smarter way.</h1>
+        <p class="sub">
+          NextGen helps you apply for personal loans, business loans, and credit options
+          with a seamless digital experience.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#apply" class="btn">Apply in 2 Minutes</a>
+          <a href="#how" class="btn btn-ghost">How it Works</a>
+        </div>
+
+        <div class="trust">
+          <div class="trust-card">
+            <div class="trust-title">Instant Eligibility</div>
+            <div class="trust-desc">Quick verification process</div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-title">Multiple Offers</div>
+            <div class="trust-desc">Compare & choose best</div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-title">Secure Data</div>
+            <div class="trust-desc">We value your privacy</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lead Form -->
+      <div class="hero-right" id="apply">
+        <div class="card form-card">
+          <h2>Apply Now</h2>
+          <p class="form-sub">Fill details to get the best offers.</p>
+
+          <form id="leadForm">
+            <div class="grid-2">
+              <div class="field">
+                <label>Full Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required />
+              </div>
+
+              <div class="field">
+                <label>Mobile Number</label>
+                <input id="mobile" type="tel" placeholder="10-digit mobile" required />
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div class="field">
+                <label>Email</label>
+                <input id="email" type="email" placeholder="Email (optional)" />
+              </div>
+
+              <div class="field">
+                <label>City</label>
+                <input id="city" type="text" placeholder="Bangalore" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Required Loan Amount</label>
+              <input id="loanAmount" type="number" placeholder="e.g. 200000" />
+            </div>
+
+            <div class="field">
+              <label>Message</label>
+              <textarea id="message" placeholder="Any details (optional)"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-full" id="submitBtn">
+              Submit Application
+            </button>
+
+            <p class="form-note">
+              By submitting, you agree to be contacted regarding loan offers.
+            </p>
+
+            <p class="status" id="statusMsg"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">Services</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Personal Loan</h3>
+          <p>Quick approval with minimal documentation.</p>
+        </div>
+        <div class="card">
+          <h3>Business Loan</h3>
+          <p>Boost your business growth with flexible options.</p>
+        </div>
+        <div class="card">
+          <h3>Credit Card</h3>
+          <p>Choose from multiple credit card options.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section alt" id="how">
+    <div class="container">
+      <h2 class="section-title">How it works</h2>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Fill Details</h3>
+          <p>Provide basic info to start your application.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Check Eligibility</h3>
+          <p>We verify and match you with suitable offers.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Get Offers</h3>
+          <p>Compare offers and choose the best one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <h2 class="section-title">FAQ</h2>
+
+      <div class="faq">
+        <details>
+          <summary>How long does approval take?</summary>
+          <p>Typically within a few minutes to a few hours depending on lender verification.</p>
+        </details>
+        <details>
+          <summary>Is my data safe?</summary>
+          <p>Yes. We collect minimum data and securely process submissions.</p>
+        </details>
+        <details>
+          <summary>Do I need to submit documents?</summary>
+          <p>Some cases require documents based on loan type and eligibility.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand-name">NextGen</div>
+        <p class="muted">Smart Loans & Credit Solutions</p>
+      </div>
+      <div class="muted">© <span id="year"></span> NextGen. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
