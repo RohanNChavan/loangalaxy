@@ -1,168 +1,186 @@
 /* =========================================
-   NEXTGEN HOMEPAGE PREMIUM ENHANCEMENTS
-   Paste this at the END of styles.css
+   HOMEPAGE PREMIUM V2 (Fintech-grade UI)
+   Paste at END of styles.css
    ========================================= */
 
-html{
-  scroll-behavior: smooth;
-}
-
-/* Softer page background depth */
-body{
-  background:
-    radial-gradient(1100px 520px at 10% 8%, rgba(29,78,216,0.12), transparent 60%),
-    radial-gradient(1100px 520px at 85% 0%, rgba(37,99,235,0.10), transparent 55%),
-    var(--bg);
-}
-
-/* Hero: more premium spacing + balance */
+/* HERO background blobs */
 .hero{
-  padding: 40px 0 30px;
-}
-
-/* Better hero title feel */
-.hero h1{
-  font-size: 42px;
-  line-height: 1.10;
-  letter-spacing: -0.6px;
-}
-
-/* Premium pill look */
-.pill{
-  box-shadow: 0 10px 26px rgba(29,78,216,0.10);
-}
-
-/* CTA buttons: more fintech-like */
-.btn{
-  box-shadow: 0 14px 30px rgba(29,78,216,0.22);
-}
-.btn:hover{
-  box-shadow: 0 18px 36px rgba(29,78,216,0.26);
-}
-
-/* Ghost button polish */
-.btn-ghost{
-  box-shadow: 0 10px 26px rgba(15,23,42,0.06);
-}
-.btn-ghost:hover{
-  box-shadow: 0 14px 30px rgba(15,23,42,0.09);
-}
-
-/* Hero media image looks more premium */
-.hero-media img{
-  border-radius: 22px;
-  box-shadow:
-    0 26px 60px rgba(15,23,42,0.16);
-}
-
-/* Form card feels like premium fintech widget */
-.form-card{
-  border: 1px solid rgba(29,78,216,0.14);
-  box-shadow:
-    0 22px 60px rgba(15,23,42,0.14);
-}
-
-/* Premium input look */
-input, select, textarea{
-  transition: box-shadow .15s ease, border-color .15s ease, transform .10s ease;
-}
-input:hover, select:hover, textarea:hover{
-  border-color: rgba(29,78,216,0.22);
-}
-input:focus, select:focus, textarea:focus{
-  transform: translateY(-1px);
-}
-
-/* Card hover animations (super important for quality feel) */
-.card{
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-}
-.card:hover{
-  transform: translateY(-4px);
-  border-color: rgba(29,78,216,0.18);
-  box-shadow:
-    0 26px 65px rgba(15,23,42,0.14);
-}
-
-/* Icon badge polish */
-.icon-badge{
-  box-shadow: 0 14px 34px rgba(29,78,216,0.12);
-}
-
-/* Premium section separation */
-.section.alt{
   position: relative;
+  overflow: hidden;
 }
-.section.alt::before{
+
+.hero::before{
   content:"";
   position:absolute;
-  left:0;
-  right:0;
-  top:0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(29,78,216,0.18), transparent);
+  inset:-200px -200px auto -200px;
+  height: 520px;
+  background:
+    radial-gradient(closest-side, rgba(29,78,216,0.22), transparent 62%),
+    radial-gradient(closest-side, rgba(37,99,235,0.18), transparent 65%);
+  filter: blur(14px);
+  animation: floatBlob 10s ease-in-out infinite;
+  pointer-events:none;
+  z-index: 0;
 }
-.section.alt::after{
+
+.hero::after{
   content:"";
   position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(29,78,216,0.14), transparent);
+  inset:auto -220px -240px auto;
+  width: 520px;
+  height: 520px;
+  background:
+    radial-gradient(closest-side, rgba(37,99,235,0.20), transparent 60%),
+    radial-gradient(closest-side, rgba(29,78,216,0.14), transparent 62%);
+  filter: blur(12px);
+  animation: floatBlob2 12s ease-in-out infinite;
+  pointer-events:none;
+  z-index: 0;
 }
 
-/* Improve spacing under section headings */
-.section-title{
-  letter-spacing: -0.3px;
+@keyframes floatBlob{
+  0%,100%{ transform: translate(0px, 0px) scale(1); }
+  50%{ transform: translate(40px, 18px) scale(1.05); }
 }
-.section-sub{
-  max-width: 80ch;
-}
-
-/* Subtle navbar elevation */
-.header{
-  box-shadow: 0 12px 26px rgba(15,23,42,0.05);
+@keyframes floatBlob2{
+  0%,100%{ transform: translate(0px, 0px) scale(1); }
+  50%{ transform: translate(-36px, -18px) scale(1.06); }
 }
 
-/* Make FAQ cards look like accordions (visual) */
-.section .cards[style*="grid-template-columns: 1fr"] .card{
-  padding: 20px;
+/* Make hero content above blobs */
+.hero .container{ position: relative; z-index: 2; }
+
+/* Trust strip */
+.trust-strip{
+  margin-top: 18px;
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.trust-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(15,23,42,0.10);
+  padding: 10px 12px;
+  border-radius: 999px;
+  font-weight: 950;
+  font-size: 13px;
+  box-shadow: 0 14px 36px rgba(15,23,42,0.07);
+}
+
+/* Partner/Lender strip */
+.partners{
+  margin-top: 18px;
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(15,23,42,0.08);
+  border-radius: 22px;
+  padding: 14px 16px;
+  box-shadow: 0 16px 40px rgba(15,23,42,0.07);
+}
+
+.partner-row{
+  display:flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items:center;
+  margin-top: 10px;
+}
+
+.partner{
+  flex: 1 1 120px;
+  min-width: 120px;
+  text-align:center;
+  border-radius: 16px;
+  padding: 10px 12px;
+  border: 1px dashed rgba(15,23,42,0.12);
+  background: rgba(255,255,255,0.85);
+  font-weight: 1000;
+  color: rgba(15,23,42,0.78);
+}
+
+/* Premium stats row */
+.stats-row{
+  margin-top: 18px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.stat{
+  background: rgba(255,255,255,0.82);
+  border: 1px solid rgba(15,23,42,0.08);
   border-radius: 20px;
+  padding: 14px 14px;
+  box-shadow: 0 14px 34px rgba(15,23,42,0.07);
+}
+.stat .big{
+  font-size: 20px;
+  font-weight: 1000;
+}
+.stat .small{
+  margin-top:6px;
+  font-size: 13px;
+  font-weight: 900;
+  color: rgba(15,23,42,0.65);
 }
 
-/* Slightly tighten cards text */
-.card p{
-  font-size: 14px;
+/* FAQ accordion */
+.faq{
+  margin-top: 18px;
+  display:grid;
+  gap: 12px;
+}
+.faq-item{
+  background: white;
+  border: 1px solid rgba(15,23,42,0.10);
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: 0 16px 40px rgba(15,23,42,0.08);
+}
+.faq-q{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+  font-weight: 1000;
+}
+.faq-q span:last-child{
+  font-weight: 1000;
+  opacity: 0.7;
+}
+.faq-a{
+  margin-top: 10px;
+  color: rgba(15,23,42,0.75);
+  line-height: 1.75;
+  display:none;
+}
+.faq-item.open .faq-a{ display:block; }
+
+/* Mobile floating CTA */
+.mobile-cta{
+  display:none;
 }
 
-/* Sticky form refinement */
-@media(min-width: 981px){
-  .form-card{
-    top: 86px;
-  }
-}
-
-/* Better hero grid spacing on wide screens */
-@media(min-width: 1200px){
-  .hero-grid{
-    gap: 34px;
-  }
-  .hero-media img{
-    height: 280px;
-  }
-}
-
-/* Mobile improvements */
 @media(max-width: 520px){
-  .hero h1{
-    font-size: 32px;
-    letter-spacing: -0.4px;
+  .stats-row{ grid-template-columns: 1fr; }
+  .partners{ padding: 12px; }
+  .partner{ min-width: 46%; }
+
+  .mobile-cta{
+    display:flex;
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    z-index: 9999;
+    gap: 10px;
   }
-  .btn{
-    width: 100%;
-  }
-  .hero-actions{
-    width: 100%;
+  .mobile-cta a{
+    flex: 1;
+    border-radius: 18px;
+    padding: 14px 14px;
+    font-weight: 1000;
   }
 }
