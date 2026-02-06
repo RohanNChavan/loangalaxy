@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LoanGalaxy | Credit Simplified</title>
+<title>LoanGalaxy | Modern Credit Simplified</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,55 +13,67 @@
   <div class="container header-inner">
     <div class="logo">LoanGalaxy</div>
     <nav class="nav">
-      <a href="#">Products</a>
-      <a href="#">How It Works</a>
-      <a href="#" class="btn">Apply Now</a>
+      <a href="#products">Products</a>
+      <a href="#how">How It Works</a>
+      <button id="navApply" class="btn">Apply Now</button>
     </nav>
   </div>
 </header>
 
 <section class="hero">
-  <div class="stars"></div>
-  <div class="planet"></div>
 
-  <div class="container">
+  <canvas id="starCanvas"></canvas>
+  <div class="planet-glow"></div>
+
+  <div class="container hero-content">
     <h1>
-      Navigate the universe of <span style="color:#6366F1;">modern credit.</span>
+      Navigate the universe of <span>modern credit.</span>
     </h1>
+
     <p>
       LoanGalaxy structures your personal loan journey with clarity,
       speed and intelligent assistance.
     </p>
 
     <div class="hero-actions">
-      <button class="btn" onclick="openForm()">Start Application</button>
+      <button id="startBtn" class="btn">Start Application</button>
     </div>
 
     <div class="form-wrapper" id="formWrapper">
       <div class="form-card">
         <h2>Apply in Minutes</h2>
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email">
-        <input type="tel" placeholder="Phone Number">
-        <input type="text" placeholder="PAN Number">
-        <select>
-          <option>Select Employment Type</option>
-        </select>
-        <button class="btn" style="margin-top:20px;width:100%;">Submit</button>
+
+        <form id="leadForm">
+          <input type="text" id="fullName" placeholder="Full Name" required>
+          <input type="email" id="email" placeholder="Email Address" required>
+          <input type="tel" id="phone" placeholder="Phone Number" required>
+          <input type="text" id="pan" placeholder="PAN Number" required>
+
+          <select id="employmentStatus" required>
+            <option value="">Select Employment Type</option>
+            <option>Salaried</option>
+            <option>Self-Employed</option>
+          </select>
+
+          <button type="submit" class="btn full-btn">
+            Submit Application
+          </button>
+        </form>
+
+        <p id="formStatus" class="form-status"></p>
       </div>
     </div>
-
   </div>
 </section>
 
-<section class="products">
+<section class="products" id="products">
   <div class="container">
     <h2>Explore Our Financial Universe</h2>
 
     <div class="product-grid">
       <div class="product-card">
         <h3>Stellar Personal Credit</h3>
-        <p>Access funds up to ₹25L with structured processing.</p>
+        <p>Access structured personal funding up to ₹25L.</p>
       </div>
 
       <div class="product-card">
@@ -71,7 +83,7 @@
 
       <div class="product-card">
         <h3>Galaxy Credit Card</h3>
-        <p>Compare and choose top cards from leading banks.</p>
+        <p>Compare and choose cards from top banks.</p>
       </div>
 
       <div class="product-card">
@@ -86,17 +98,16 @@
 
       <div class="product-card">
         <h3>Aurum Gold Loan</h3>
-        <p>Unlock value against gold with transparent rates.</p>
+        <p>Unlock liquidity against gold with transparent rates.</p>
       </div>
     </div>
   </div>
 </section>
 
-<script>
-function openForm(){
-  document.getElementById("formWrapper").classList.toggle("active");
-}
-</script>
+<footer>
+  © 2026 LoanGalaxy. Personal Loan Application Assistance Platform.
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
