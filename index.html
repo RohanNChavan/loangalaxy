@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LoanGalaxy | Compare Personal Loans Online</title>
-<meta name="description" content="Compare personal loan offers from top lenders. Instant eligibility check, fast approval, secure processing.">
+
+<title>Instant Personal Loan Online – Compare & Apply | LoanGalaxy</title>
+<meta name="description" content="Apply for an Instant Personal Loan online across India. Compare offers from multiple lenders, check eligibility instantly, and apply securely with LoanGalaxy.">
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,149 +16,215 @@
   <div class="container header-inner">
     <div class="logo">LoanGalaxy</div>
     <nav class="nav">
-      <a href="#products">Products</a>
+      <a href="#how">How It Works</a>
       <a href="#compare">Compare</a>
+      <a href="#guide">Guide</a>
       <a href="#faq">FAQ</a>
       <button id="navApply" class="btn">Apply Now</button>
     </nav>
   </div>
 </header>
 
-
 <!-- HERO -->
 <section class="hero">
-
-  <canvas id="starCanvas"></canvas>
-
   <div class="container hero-grid">
 
-    <div class="hero-left reveal">
+    <div class="hero-left">
       <h1>
-        Compare & Apply <span>Personal Loans</span> Confidently
+        Instant Personal Loan – Quickly & Safely
       </h1>
-      <p>
-        Check eligibility instantly. Compare lenders transparently.
-        Apply securely with full clarity.
+
+      <p class="hero-sub">
+        Compare loan offers from multiple lenders across India.
+        Check eligibility instantly and apply securely in minutes.
       </p>
+
       <button id="startBtn" class="btn large-btn">
         Check Eligibility
       </button>
+
+      <p class="trust-line">
+        <strong>1 Lakh+ customers</strong> • Rates from 10.99%* • Approval subject to lender policies
+      </p>
     </div>
 
-    <div class="hero-right reveal">
-      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop"
-           alt="Galaxy thinking illustration">
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop"
+           alt="Young professional planning finances">
     </div>
 
   </div>
 
+  <!-- FORM -->
   <div class="container">
-    <div class="form-wrapper" id="formWrapper">
-      <div class="form-card glass">
+    <div class="form-card" id="formSection">
 
-        <div class="form-header">
-          <h2>Apply in Minutes</h2>
-          <button id="closeForm">✕</button>
+      <h2>Start Your Application</h2>
+
+      <form id="leadForm">
+
+        <div class="form-row">
+          <input id="fullName" placeholder="Full Name" required>
+          <input id="mobile" placeholder="Mobile Number" required>
         </div>
 
-        <form id="leadForm">
+        <div class="form-row">
+          <input id="email" type="email" placeholder="Email Address" required>
+          <select id="employment" required>
+            <option value="">Employment Type</option>
+            <option>Salaried</option>
+            <option>Self-Employed</option>
+          </select>
+        </div>
 
-          <div class="form-row">
-            <input id="fullName" placeholder="Full Name" required>
-            <input id="email" type="email" placeholder="Email Address" required>
-          </div>
+        <div class="form-row">
+          <input id="income" type="number" placeholder="Monthly Income (₹)" required>
+          <input id="loanAmount" type="number" placeholder="Loan Amount Required (₹)" required>
+        </div>
 
-          <div class="form-row">
-            <input id="phone" placeholder="Phone Number" required>
-            <input id="pan" placeholder="PAN Number" required>
-          </div>
+        <button id="submitBtn" class="btn full-btn">
+          Submit Application
+        </button>
 
-          <div class="form-row">
-            <input id="monthlyIncome" type="number" placeholder="Monthly Income" required>
-            <input id="loanAmount" type="number" placeholder="Loan Amount" required>
-          </div>
+        <p id="statusMsg"></p>
 
-          <button id="submitBtn" class="btn full-btn">
-            Submit Application
-          </button>
+      </form>
 
-          <p id="statusMsg"></p>
+    </div>
+  </div>
 
-        </form>
+</section>
 
+<!-- HOW IT WORKS -->
+<section id="how" class="section light">
+  <div class="container">
+    <h2>How LoanGalaxy Works</h2>
+    <div class="three-col">
+      <div>
+        <h3>1. Enter Basic Details</h3>
+        <p>Provide essential information to check eligibility instantly.</p>
+      </div>
+      <div>
+        <h3>2. Compare Offers</h3>
+        <p>View loan options from multiple lenders across India.</p>
+      </div>
+      <div>
+        <h3>3. Apply Securely</h3>
+        <p>Proceed with the lender of your choice. Approval & disbursal are handled by the lender.</p>
       </div>
     </div>
   </div>
-
 </section>
 
-
 <!-- LENDER LOGOS -->
-<section class="lenders reveal">
-  <div class="container logos">
-    <img src="https://dummyimage.com/120x40/ccc/000&text=Bank+1">
-    <img src="https://dummyimage.com/120x40/ccc/000&text=Bank+2">
-    <img src="https://dummyimage.com/120x40/ccc/000&text=Bank+3">
-    <img src="https://dummyimage.com/120x40/ccc/000&text=NBFC+1">
-    <img src="https://dummyimage.com/120x40/ccc/000&text=NBFC+2">
+<section class="section logos">
+  <div class="container logo-row">
+    <span>Bank Partner</span>
+    <span>NBFC Partner</span>
+    <span>Fintech Partner</span>
+    <span>Digital Lender</span>
+    <span>Regional NBFC</span>
   </div>
 </section>
 
-
 <!-- COMPARISON TABLE -->
-<section id="compare" class="compare reveal">
+<section id="compare" class="section">
   <div class="container">
-    <h2>Compare Loan Features</h2>
+    <h2>Why Compare Loans with LoanGalaxy?</h2>
 
-    <table>
+    <table class="compare-table">
       <tr>
         <th>Feature</th>
         <th>LoanGalaxy</th>
-        <th>Others</th>
+        <th>Single Lender</th>
       </tr>
       <tr>
-        <td>Multiple Lenders</td>
+        <td>Multiple Loan Offers</td>
+        <td>✔</td>
+        <td>✖</td>
+      </tr>
+      <tr>
+        <td>Transparent Process</td>
         <td>✔</td>
         <td>Limited</td>
       </tr>
       <tr>
-        <td>Transparent Rates</td>
+        <td>Indicative Rate Visibility</td>
         <td>✔</td>
         <td>Varies</td>
       </tr>
       <tr>
-        <td>Secure Processing</td>
+        <td>Secure Application</td>
         <td>✔</td>
-        <td>Unclear</td>
+        <td>Depends</td>
       </tr>
     </table>
   </div>
 </section>
 
+<!-- SEO GUIDE -->
+<section id="guide" class="section light">
+  <div class="container guide">
+    <h2>Instant Personal Loan Online in India – Complete Guide</h2>
+
+    <p>
+      An instant personal loan is an unsecured loan designed to provide quick access to funds without requiring collateral...
+    </p>
+
+    <h3>What is an Instant Personal Loan?</h3>
+    <p>
+      An instant personal loan allows borrowers to access funds quickly for urgent needs such as medical expenses, travel, education, home renovation, or debt consolidation...
+    </p>
+
+    <h3>Eligibility Criteria</h3>
+    <p>
+      Eligibility typically depends on age, income, employment stability, and credit profile...
+    </p>
+
+    <h3>Interest Rates & Charges</h3>
+    <p>
+      Indicative interest rates may start from 10.99%* per annum depending on lender policy...
+    </p>
+
+    <h3>Documents Required</h3>
+    <p>
+      Common documents include PAN, Aadhaar, income proof, and bank statements...
+    </p>
+
+    <h3>How LoanGalaxy Helps</h3>
+    <p>
+      LoanGalaxy acts as a loan comparison marketplace connecting borrowers with multiple lenders...
+    </p>
+
+    <p>
+      We operate across PAN India and aim to simplify the borrowing experience...
+    </p>
+
+  </div>
+</section>
 
 <!-- FAQ -->
-<section id="faq" class="faq reveal">
+<section id="faq" class="section">
   <div class="container">
     <h2>Frequently Asked Questions</h2>
 
-    <div class="accordion">
-      <div class="faq-item">
-        <button class="faq-question">Is checking eligibility free?</button>
-        <div class="faq-answer">Yes, eligibility check is completely free.</div>
-      </div>
+    <div class="faq-item">
+      <button class="faq-question">Is LoanGalaxy a lender?</button>
+      <div class="faq-answer">No. LoanGalaxy is a comparison marketplace. Final approval and disbursal are subject to lender policies.</div>
+    </div>
 
-      <div class="faq-item">
-        <button class="faq-question">How long does approval take?</button>
-        <div class="faq-answer">Approvals may happen within hours depending on lender.</div>
-      </div>
+    <div class="faq-item">
+      <button class="faq-question">How fast can I get funds?</button>
+      <div class="faq-answer">Timelines depend on the lender. Some lenders may process applications quickly once approved.</div>
     </div>
 
   </div>
 </section>
 
-
 <footer>
-  © <span id="year"></span> LoanGalaxy. All rights reserved.
+  <div class="container">
+    <p>© <span id="year"></span> LoanGalaxy. PAN India loan comparison platform.</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
