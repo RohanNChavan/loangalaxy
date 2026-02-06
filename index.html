@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LoanGalaxy | Intelligent Credit Infrastructure</title>
+<title>LoanGalaxy | Credit Simplified</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -13,67 +13,90 @@
   <div class="container header-inner">
     <div class="logo">LoanGalaxy</div>
     <nav class="nav">
-      <a href="#">Vision</a>
+      <a href="#">Products</a>
       <a href="#">How It Works</a>
-      <a href="#">Trust</a>
       <a href="#" class="btn">Apply Now</a>
     </nav>
   </div>
 </header>
 
 <section class="hero">
+  <div class="stars"></div>
+  <div class="planet"></div>
+
   <div class="container">
     <h1>
-      Intelligent infrastructure for <span>modern credit access.</span>
+      Navigate the universe of <span style="color:#6366F1;">modern credit.</span>
     </h1>
     <p>
-      LoanGalaxy brings clarity, structure and control to personal loan applications — 
-      built for a generation that expects speed without compromising trust.
+      LoanGalaxy structures your personal loan journey with clarity,
+      speed and intelligent assistance.
     </p>
+
     <div class="hero-actions">
-      <a href="#" class="btn">Start Application</a>
+      <button class="btn" onclick="openForm()">Start Application</button>
     </div>
 
-    <div class="metrics">
-      <div class="metric">
-        <h3>2 Min</h3>
-        <p>Application Time</p>
-      </div>
-      <div class="metric">
-        <h3>24 Hr</h3>
-        <p>Support Response</p>
-      </div>
-      <div class="metric">
-        <h3>Secure</h3>
-        <p>Encrypted Handling</p>
+    <div class="form-wrapper" id="formWrapper">
+      <div class="form-card">
+        <h2>Apply in Minutes</h2>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="tel" placeholder="Phone Number">
+        <input type="text" placeholder="PAN Number">
+        <select>
+          <option>Select Employment Type</option>
+        </select>
+        <button class="btn" style="margin-top:20px;width:100%;">Submit</button>
       </div>
     </div>
+
   </div>
 </section>
 
-<section class="section">
+<section class="products">
   <div class="container">
-    <h2 class="section-title">How LoanGalaxy Works</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>1. Structured Data Flow</h3>
-        <p>Essential borrower information captured in a lender-aligned format for smoother processing.</p>
+    <h2>Explore Our Financial Universe</h2>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <h3>Stellar Personal Credit</h3>
+        <p>Access funds up to ₹25L with structured processing.</p>
       </div>
-      <div class="card">
-        <h3>2. Intelligent Preparation</h3>
-        <p>Applications organized for clarity and eligibility assessment readiness.</p>
+
+      <div class="product-card">
+        <h3>Orbit Micro Loan</h3>
+        <p>Instant small-ticket loans for urgent needs.</p>
       </div>
-      <div class="card">
-        <h3>3. Human-First Assistance</h3>
-        <p>Dedicated support within 24 hours to guide your next steps.</p>
+
+      <div class="product-card">
+        <h3>Galaxy Credit Card</h3>
+        <p>Compare and choose top cards from leading banks.</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Cosmic Business Funding</h3>
+        <p>Unsecured funding for growing enterprises.</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Score Booster Pro</h3>
+        <p>Improve your credit profile strategically.</p>
+      </div>
+
+      <div class="product-card">
+        <h3>Aurum Gold Loan</h3>
+        <p>Unlock value against gold with transparent rates.</p>
       </div>
     </div>
   </div>
 </section>
 
-<footer>
-  © 2026 LoanGalaxy. Personal Loan Application Assistance Platform.
-</footer>
+<script>
+function openForm(){
+  document.getElementById("formWrapper").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
