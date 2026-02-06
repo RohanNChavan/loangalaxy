@@ -1,388 +1,97 @@
 <!DOCTYPE html>
-<html lang="en-IN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>NextGen Finance | Apply for Personal Loan Online</title>
-  <meta name="description" content="Apply for a personal loan online with NextGen Finance. Secure form, fast response within 24 hours, guided support." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://rohanchavan.github.io/nextgen/" />
-
-  <meta property="og:title" content="NextGen Finance | Apply for Personal Loan Online" />
-  <meta property="og:description" content="Secure application. Clear eligibility guidance. Support within 24 hours." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rohanchavan.github.io/nextgen/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&q=80&auto=format&fit=crop" />
-
-  <link rel="icon" type="image/svg+xml" href="assets/logo.svg" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>LoanGalaxy | Personal Loans Made Simple</title>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="NextGen Finance Home">
-        <img src="assets/logo.svg" alt="NextGen Finance Logo" class="logo" />
-        <span class="brand-name">NextGen Finance</span>
-      </a>
 
-      <nav class="nav">
-        <a class="active" href="index.html">Home</a>
-        <a href="loans.html">Loans</a>
-        <a href="about.html">About Us</a>
-        <a href="blog.html">Blog</a>
-        <a href="#loan-form" class="btn btn-small">Apply Now</a>
-      </nav>
-
-      <button class="hamburger" id="hamburger" aria-label="Open Menu">☰</button>
-    </div>
-
-    <div class="mobile-nav" id="mobileNav">
-      <a href="index.html">Home</a>
-      <a href="loans.html">Loans</a>
-      <a href="about.html">About Us</a>
-      <a href="blog.html">Blog</a>
-      <a href="#loan-form">Apply</a>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <main class="hero">
-    <div class="container hero-grid">
-      <!-- LEFT -->
-      <section class="hero-left reveal">
-        <p class="pill">Trusted • Secure • Fast Assistance</p>
-
-        <h1>
-          Loans shouldn’t feel confusing.
-          <span style="color: var(--primary);">Apply smart.</span>
-        </h1>
-
-        <p class="sub">
-          Start your personal loan application in 2 minutes.
-          Whether it’s medical emergency, wedding expense, education or debt consolidation —
-          NextGen Finance helps you move forward with clarity.
-        </p>
-
-        <div class="trust-strip">
-          <div class="trust-pill">🔒 Secure submission</div>
-          <div class="trust-pill">✅ Eligibility-ready details</div>
-          <div class="trust-pill">🚫 No OTP asked online</div>
-          <div class="trust-pill">📞 Call within 24 hrs</div>
-        </div>
-
-        <div class="hero-actions">
-          <a class="btn" href="#loan-form">Apply Now</a>
-          <a class="btn btn-ghost" href="#why">Why Choose Us</a>
-        </div>
-
-        <div class="stats-row">
-          <div class="stat">
-            <div class="big">2 mins</div>
-            <div class="small">Application time</div>
-          </div>
-          <div class="stat">
-            <div class="big">24 hrs</div>
-            <div class="small">Support response</div>
-          </div>
-          <div class="stat">
-            <div class="big">Privacy</div>
-            <div class="small">Minimal data</div>
-          </div>
-        </div>
-
-        <div class="partners">
-          <div style="font-weight:1000;">Trusted processing partners</div>
-          <div class="small-muted" style="margin-top:6px;">
-            Representative logos for trust (offer depends on eligibility & verification).
-          </div>
-          <div class="partner-row">
-            <div class="partner">HDFC</div>
-            <div class="partner">ICICI</div>
-            <div class="partner">AXIS</div>
-            <div class="partner">BAJAJ</div>
-            <div class="partner">IDFC</div>
-          </div>
-        </div>
-
-        <div class="hero-media">
-          <img
-            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1400&q=80&auto=format&fit=crop"
-            alt="Customer applying for personal loan online"
-            loading="lazy"
-          />
-        </div>
-      </section>
-
-      <!-- RIGHT FORM -->
-      <section class="hero-right reveal" id="loan-form">
-        <div class="card form-card">
-          <h2>Apply for a Personal Loan</h2>
-          <p>Submit details — our team assists you with next steps.</p>
-
-          <form id="leadForm" novalidate>
-            <div class="grid-2">
-              <div class="field">
-                <label for="fullName">Full Name *</label>
-                <input id="fullName" type="text" placeholder="Enter your name" autocomplete="name" required />
-                <small class="error" id="errFullName"></small>
-              </div>
-              <div class="field">
-                <label for="email">Email Address *</label>
-                <input id="email" type="email" placeholder="name@email.com" autocomplete="email" required />
-                <small class="error" id="errEmail"></small>
-              </div>
-            </div>
-
-            <div class="grid-2">
-              <div class="field">
-                <label for="phone">Phone Number *</label>
-                <input id="phone" type="tel" placeholder="10-digit mobile number" inputmode="numeric" autocomplete="tel" required />
-                <small class="error" id="errPhone"></small>
-              </div>
-              <div class="field">
-                <label for="pan">PAN Number *</label>
-                <input id="pan" type="text" placeholder="ABCDE1234F" autocomplete="off" required />
-                <small class="error" id="errPan"></small>
-              </div>
-            </div>
-
-            <div class="grid-2">
-              <div class="field">
-                <label for="employmentStatus">Employment Status *</label>
-                <select id="employmentStatus" required>
-                  <option value="">Select</option>
-                  <option value="Salaried">Salaried</option>
-                  <option value="Self-Employed">Self-Employed</option>
-                  <option value="Student">Student</option>
-                  <option value="Unemployed">Unemployed</option>
-                  <option value="Other">Other</option>
-                </select>
-                <small class="error" id="errEmployment"></small>
-              </div>
-              <div class="field">
-                <label for="pincode">PIN Code *</label>
-                <input id="pincode" type="text" placeholder="6-digit pincode" inputmode="numeric" autocomplete="postal-code" required />
-                <small class="error" id="errPincode"></small>
-              </div>
-            </div>
-
-            <div class="grid-2">
-              <div class="field">
-                <label for="monthlyIncome">Monthly Income (₹) *</label>
-                <input id="monthlyIncome" type="number" placeholder="e.g. 50000" min="0" required />
-                <small class="error" id="errIncome"></small>
-              </div>
-              <div class="field">
-                <label for="loanAmount">Loan Amount (₹) *</label>
-                <input id="loanAmount" type="number" placeholder="e.g. 200000" min="0" required />
-                <small class="error" id="errLoan"></small>
-              </div>
-            </div>
-
-            <label class="checkbox">
-              <input id="agree" type="checkbox" required />
-              <span>I agree to the <a href="about.html">Terms</a> & <a href="about.html">Privacy Policy</a></span>
-            </label>
-            <small class="error" id="errAgree"></small>
-
-            <button type="submit" class="btn btn-full" id="submitBtn">Submit Application</button>
-            <p class="status" id="statusMsg"></p>
-
-            <p class="small-muted" style="margin-top:10px; text-align:center;">
-              🔐 Safety Note: We never ask OTP on website.
-            </p>
-          </form>
-        </div>
-      </section>
-    </div>
-  </main>
-
-  <!-- WHY CHOOSE (STRONG & CONVINCING) -->
-  <section class="section alt" id="why">
-    <div class="container reveal">
-      <h2 class="section-title">Why Choose NextGen Finance?</h2>
-      <p class="section-sub">
-        Loans are not just about money — they’re about trust. We focus on speed, clarity and responsible assistance.
-      </p>
-
-      <div class="cards">
-        <div class="card">
-          <div class="icon-badge">⚡</div>
-          <h3 style="margin-top:12px;">Application in 2 minutes</h3>
-          <p>A clean form that captures exactly what’s needed — reduces delays & follow-ups.</p>
-          <div class="why-proof">✅ Faster evaluation-ready profile</div>
-        </div>
-
-        <div class="card">
-          <div class="icon-badge">🔒</div>
-          <h3 style="margin-top:12px;">Privacy-first handling</h3>
-          <p>Minimum required information, used only for processing & assistance.</p>
-          <div class="why-proof">✅ No OTP requested online</div>
-        </div>
-
-        <div class="card">
-          <div class="icon-badge">📞</div>
-          <h3 style="margin-top:12px;">Human support (not bots)</h3>
-          <p>We contact you within 24 hours and guide the next steps clearly.</p>
-          <div class="why-proof">✅ Verified call support</div>
-        </div>
-      </div>
-
-      <div class="cred-row">
-        <div class="cred">
-          <div class="cred-big">24 hrs</div>
-          <div class="cred-small">Support response timeline</div>
-        </div>
-        <div class="cred">
-          <div class="cred-big">Secure</div>
-          <div class="cred-small">Encrypted submission</div>
-        </div>
-        <div class="cred">
-          <div class="cred-big">Transparent</div>
-          <div class="cred-small">No false approval claims</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- MID APPLY STRIP -->
-  <section class="section">
-    <div class="container reveal">
-      <div class="apply-strip">
-        <div>
-          <h2 style="font-size:24px; font-weight:1000;">Need funds urgently?</h2>
-          <p class="small-muted" style="margin-top:8px; line-height:1.7; max-width:75ch;">
-            Apply now — it takes 2 minutes. Our team will contact you within 24 hours to assist with next steps.
-          </p>
-        </div>
-        <div style="display:flex; gap:12px; flex-wrap:wrap;">
-          <a class="btn" href="#loan-form">Apply Now</a>
-          <a class="btn btn-ghost" href="loans.html">Explore Loans</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section alt">
-    <div class="container reveal">
-      <h2 class="section-title">What customers say</h2>
-      <p class="section-sub">Real borrower experiences (representative feedback).</p>
-
-      <div class="testimonials">
-        <div class="card t-card">
-          <div class="t-top">
-            <div class="avatar">A</div>
-            <div>
-              <div class="t-name">Ananya S.</div>
-              <div class="t-loc">Bengaluru</div>
-            </div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="quote">“The form was simple and I got a call next day. Very clear process and support.”</p>
-        </div>
-
-        <div class="card t-card">
-          <div class="t-top">
-            <div class="avatar">R</div>
-            <div>
-              <div class="t-name">Rahul K.</div>
-              <div class="t-loc">Hyderabad</div>
-            </div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="quote">“No spam. Just needed guidance and they helped with next steps professionally.”</p>
-        </div>
-
-        <div class="card t-card">
-          <div class="t-top">
-            <div class="avatar">P</div>
-            <div>
-              <div class="t-name">Priya M.</div>
-              <div class="t-loc">Pune</div>
-            </div>
-          </div>
-          <div class="stars">★★★★★</div>
-          <p class="quote">“I liked that they never asked OTP online. Felt safe and trustworthy.”</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" id="faq">
-    <div class="container reveal">
-      <h2 class="section-title">FAQs</h2>
-      <p class="section-sub">Honest answers to common questions.</p>
-
-      <div class="faq">
-        <div class="faq-item">
-          <div class="faq-q"><span>Is loan approval guaranteed?</span><span>+</span></div>
-          <div class="faq-a">No. Loan approval depends on eligibility checks and verification by the lender/financial institution.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><span>Is my PAN & phone safe?</span><span>+</span></div>
-          <div class="faq-a">Yes. We collect only essential details and use them for processing and communication.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-q"><span>When will I get a call?</span><span>+</span></div>
-          <div class="faq-a">Most users receive a call within 24 hours after form submission.</div>
-        </div>
-      </div>
-
-      <div style="margin-top:18px;">
-        <a class="btn" href="#loan-form">Apply Now</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <div>
-        <div class="brand-name">NextGen Finance</div>
-        <p class="small-muted">Personal Loan Application Assistance • India</p>
-        <p class="small-muted" style="margin-top:6px; max-width:75ch;">
-          Disclaimer: NextGen Finance provides loan application assistance. Final loan approval is subject to eligibility and verification by respective lenders.
-        </p>
-      </div>
-      <div class="small-muted">© <span id="year"></span> NextGen Finance. All rights reserved.</div>
-    </div>
-  </footer>
-
-  <!-- MOBILE CTA -->
-  <div class="mobile-cta">
-    <a class="btn" href="#loan-form">Apply Now</a>
-    <a class="btn btn-ghost" href="#faq">FAQs</a>
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand-name">LoanGalaxy</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Loans</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#apply" class="btn">Apply Now</a>
+    </nav>
   </div>
+</header>
 
-  <script src="script.js"></script>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Explore financial freedom with <span>LoanGalaxy</span></h1>
+      <p class="sub">
+        Quick, secure personal loan applications designed for modern India.
+        Transparent assistance. Real support. Fast response.
+      </p>
+      <div class="hero-actions">
+        <a href="#apply" class="btn">Start Application</a>
+      </div>
+    </div>
 
-  <!-- FAQ accordion JS -->
-  <script>
-    document.querySelectorAll(".faq-q").forEach(q => {
-      q.addEventListener("click", () => {
-        const item = q.parentElement;
-        const icon = q.querySelector("span:last-child");
-        item.classList.toggle("open");
-        icon.textContent = item.classList.contains("open") ? "–" : "+";
-      });
-    });
+    <div class="card form-card" id="apply">
+      <h2>Apply in 2 Minutes</h2>
+      <form>
+        <div class="field"><input type="text" placeholder="Full Name"/></div>
+        <div class="field"><input type="email" placeholder="Email"/></div>
+        <div class="field"><input type="tel" placeholder="Phone Number"/></div>
+        <div class="field"><input type="text" placeholder="PAN Number"/></div>
+        <div class="field"><select><option>Select Employment</option></select></div>
+        <div class="field"><button class="btn" style="width:100%;margin-top:10px;">Submit Application</button></div>
+      </form>
+    </div>
+  </div>
+</section>
 
-    // Scroll reveal
-    const els = document.querySelectorAll(".reveal");
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add("visible");
-        }
-      });
-    }, { threshold: 0.12 });
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why LoanGalaxy?</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>⚡ Fast Application</h3>
+        <p>Complete your application within minutes with minimal paperwork.</p>
+      </div>
+      <div class="card">
+        <h3>🔒 Secure Handling</h3>
+        <p>Your information stays protected with encrypted submission.</p>
+      </div>
+      <div class="card">
+        <h3>📞 Real Support</h3>
+        <p>Dedicated team assistance within 24 hours of applying.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    els.forEach(el => observer.observe(el));
-  </script>
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">What Customers Say</h2>
+    <div class="testimonials">
+      <div class="card t-card">
+        “Simple process and clear communication. Felt secure.”  
+        <br><br><strong>— Ananya, Bengaluru</strong>
+      </div>
+      <div class="card t-card">
+        “Got support call next day. Professional team.”  
+        <br><br><strong>— Rahul, Hyderabad</strong>
+      </div>
+      <div class="card t-card">
+        “Clean UI and smooth experience.”  
+        <br><br><strong>— Priya, Pune</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2026 LoanGalaxy. All Rights Reserved.
+</footer>
+
 </body>
 </html>
