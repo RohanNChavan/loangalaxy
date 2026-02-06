@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LoanGalaxy | Compare & Apply Personal Loans Online</title>
+<title>LoanGalaxy | Compare & Apply Personal Loans</title>
 <meta name="description" content="Compare personal loans from top banks. Instant eligibility check. Fast approval. Secure application process.">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -22,26 +22,42 @@
   </div>
 </header>
 
+
+<!-- HERO -->
 <section class="hero">
 
+  <!-- Galaxy Canvas -->
   <canvas id="starCanvas"></canvas>
+
+  <!-- Soft Galaxy Glow -->
   <div class="planet-glow"></div>
 
-  <div class="container hero-content">
+  <div class="container hero-grid">
 
-    <h1>
-      Compare & Apply <span>Personal Loans</span> Instantly
-    </h1>
+    <div class="hero-left">
+      <h1>
+        Navigate your <span>financial galaxy</span> with clarity.
+      </h1>
 
-    <p>
-      Check eligibility, compare offers from multiple lenders,
-      and apply seamlessly — all in one secure platform.
-    </p>
+      <p>
+        Compare loan offers, check eligibility instantly,
+        and apply securely — all in one seamless experience.
+      </p>
 
-    <div class="hero-actions">
-      <button id="startBtn" class="btn large-btn">Check Eligibility</button>
+      <button id="startBtn" class="btn large-btn">
+        Check Eligibility
+      </button>
     </div>
 
+    <div class="hero-right">
+      <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1200&auto=format&fit=crop"
+           alt="Person thinking about loan in galaxy environment">
+    </div>
+
+  </div>
+
+  <!-- FORM -->
+  <div class="container">
     <div class="form-wrapper" id="formWrapper">
       <div class="form-card">
 
@@ -51,20 +67,30 @@
         </div>
 
         <form id="leadForm">
-          <input type="text" id="fullName" placeholder="Full Name" required>
-          <input type="email" id="email" placeholder="Email Address" required>
-          <input type="tel" id="phone" placeholder="Phone Number" required>
-          <input type="text" id="pan" placeholder="PAN Number" required>
 
-          <select id="employmentStatus" required>
-            <option value="">Select Employment Type</option>
-            <option>Salaried</option>
-            <option>Self-Employed</option>
-          </select>
+          <div class="form-row">
+            <input type="text" id="fullName" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+          </div>
 
-          <input type="text" id="pincode" placeholder="PIN Code" required>
-          <input type="number" id="monthlyIncome" placeholder="Monthly Income" required>
-          <input type="number" id="loanAmount" placeholder="Loan Amount Required" required>
+          <div class="form-row">
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="text" id="pan" placeholder="PAN Number" required>
+          </div>
+
+          <div class="form-row">
+            <select id="employmentStatus" required>
+              <option value="">Employment Type</option>
+              <option>Salaried</option>
+              <option>Self-Employed</option>
+            </select>
+            <input type="text" id="pincode" placeholder="PIN Code" required>
+          </div>
+
+          <div class="form-row">
+            <input type="number" id="monthlyIncome" placeholder="Monthly Income" required>
+            <input type="number" id="loanAmount" placeholder="Loan Amount Required" required>
+          </div>
 
           <label class="checkbox">
             <input type="checkbox" id="agree">
@@ -76,15 +102,17 @@
           </button>
 
           <p id="statusMsg" class="form-status"></p>
+
         </form>
 
       </div>
     </div>
-
   </div>
+
 </section>
 
 
+<!-- STATS -->
 <section class="stats">
   <div class="container stats-grid">
     <div>
@@ -103,79 +131,26 @@
 </section>
 
 
+<!-- PRODUCTS -->
 <section class="products light" id="products">
   <div class="container">
-    <h2>Loan Products We Help You Access</h2>
+    <h2>Loan Products</h2>
 
     <div class="product-grid">
-
       <div class="product-card">
         <h3>Personal Loan</h3>
-        <p>Unsecured loans up to ₹25L with competitive interest rates.</p>
+        <p>Unsecured loans up to ₹25L with competitive rates.</p>
       </div>
 
       <div class="product-card">
         <h3>Business Loan</h3>
-        <p>Funding solutions for growing enterprises and MSMEs.</p>
+        <p>Funding solutions for MSMEs & entrepreneurs.</p>
       </div>
 
       <div class="product-card">
         <h3>Credit Cards</h3>
-        <p>Compare cards from top banks with exclusive rewards.</p>
+        <p>Compare premium cards from leading banks.</p>
       </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="why" id="why">
-  <div class="container">
-    <h2>Why Choose LoanGalaxy?</h2>
-
-    <div class="why-grid">
-
-      <div>
-        <h3>Compare Multiple Offers</h3>
-        <p>View loan options from leading lenders before applying.</p>
-      </div>
-
-      <div>
-        <h3>Fast & Transparent</h3>
-        <p>Clear process, no hidden charges, complete visibility.</p>
-      </div>
-
-      <div>
-        <h3>Secure Data Handling</h3>
-        <p>Encrypted processing with strict privacy safeguards.</p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<section class="how light" id="how">
-  <div class="container">
-    <h2>How It Works</h2>
-
-    <div class="steps">
-
-      <div>
-        <h3>1. Check Eligibility</h3>
-        <p>Fill basic details in under 2 minutes.</p>
-      </div>
-
-      <div>
-        <h3>2. Compare Offers</h3>
-        <p>View lender options tailored to your profile.</p>
-      </div>
-
-      <div>
-        <h3>3. Complete Application</h3>
-        <p>Upload documents and proceed for approval.</p>
-      </div>
-
     </div>
   </div>
 </section>
