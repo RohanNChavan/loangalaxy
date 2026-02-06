@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LoanGalaxy | Compare & Apply Personal Loans</title>
-<meta name="description" content="Compare personal loans from top banks. Instant eligibility check. Fast approval. Secure application process.">
+<title>LoanGalaxy | Compare & Apply Loans</title>
+<meta name="description" content="Compare personal loans from top lenders. Instant eligibility check. Secure & fast approval.">
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,33 +15,29 @@
     <div class="logo">LoanGalaxy</div>
     <nav class="nav">
       <a href="#products">Products</a>
-      <a href="#why">Why Choose Us</a>
+      <a href="#why">Why Us</a>
       <a href="#how">How It Works</a>
       <button id="navApply" class="btn">Apply Now</button>
     </nav>
   </div>
 </header>
 
-
-<!-- HERO -->
 <section class="hero">
 
-  <!-- Galaxy Canvas -->
   <canvas id="starCanvas"></canvas>
-
-  <!-- Soft Galaxy Glow -->
-  <div class="planet-glow"></div>
+  <div class="planet planet-1"></div>
+  <div class="planet planet-2"></div>
 
   <div class="container hero-grid">
 
     <div class="hero-left">
       <h1>
-        Navigate your <span>financial galaxy</span> with clarity.
+        Explore your <span>financial galaxy</span> with confidence.
       </h1>
 
       <p>
-        Compare loan offers, check eligibility instantly,
-        and apply securely — all in one seamless experience.
+        Compare loan offers from multiple lenders. Check eligibility instantly.
+        Apply securely with complete transparency.
       </p>
 
       <button id="startBtn" class="btn large-btn">
@@ -50,13 +46,12 @@
     </div>
 
     <div class="hero-right">
-      <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1200&auto=format&fit=crop"
-           alt="Person thinking about loan in galaxy environment">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
+           alt="Person thinking about financial future">
     </div>
 
   </div>
 
-  <!-- FORM -->
   <div class="container">
     <div class="form-wrapper" id="formWrapper">
       <div class="form-card">
@@ -104,7 +99,6 @@
           <p id="statusMsg" class="form-status"></p>
 
         </form>
-
       </div>
     </div>
   </div>
@@ -112,48 +106,65 @@
 </section>
 
 
-<!-- STATS -->
 <section class="stats">
   <div class="container stats-grid">
     <div>
-      <h3>25+ Lenders</h3>
-      <p>Partnered Banks & NBFCs</p>
+      <h3 class="counter" data-target="25">0</h3>
+      <p>Lender Partners</p>
     </div>
     <div>
-      <h3>₹500Cr+</h3>
-      <p>Loans Facilitated</p>
+      <h3 class="counter" data-target="500">0</h3>
+      <p>₹ Crores Facilitated</p>
     </div>
     <div>
-      <h3>2M+</h3>
-      <p>Applications Processed</p>
+      <h3 class="counter" data-target="2">0</h3>
+      <p>Million Applications</p>
     </div>
   </div>
 </section>
 
 
-<!-- PRODUCTS -->
-<section class="products light" id="products">
+<section class="explain light">
+  <div class="container explain-grid">
+    <div>
+      <h2>Compare Before You Apply</h2>
+      <p>
+        We help you view loan offers from multiple lenders in one place.
+        Make informed decisions with transparent interest rates and terms.
+      </p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop"
+         alt="Galaxy illustration">
+  </div>
+</section>
+
+
+<section class="testimonials">
   <div class="container">
-    <h2>Loan Products</h2>
+    <h2>What Our Customers Say</h2>
 
-    <div class="product-grid">
-      <div class="product-card">
-        <h3>Personal Loan</h3>
-        <p>Unsecured loans up to ₹25L with competitive rates.</p>
+    <div class="testimonial-slider" id="testimonialSlider">
+      <div class="testimonial active">
+        <p>"Fast, transparent and super easy process."</p>
+        <span>— Rahul S.</span>
       </div>
-
-      <div class="product-card">
-        <h3>Business Loan</h3>
-        <p>Funding solutions for MSMEs & entrepreneurs.</p>
+      <div class="testimonial">
+        <p>"Got my loan approved within days. Highly recommend."</p>
+        <span>— Priya K.</span>
       </div>
-
-      <div class="product-card">
-        <h3>Credit Cards</h3>
-        <p>Compare premium cards from leading banks.</p>
+      <div class="testimonial">
+        <p>"Best platform to compare loan options."</p>
+        <span>— Amit V.</span>
       </div>
     </div>
+
   </div>
 </section>
+
+
+<div class="sticky-cta" id="stickyCTA">
+  <button id="stickyApply">Start Application</button>
+</div>
 
 
 <footer>
