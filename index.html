@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LoanGalaxy | Compare & Apply Loans</title>
-<meta name="description" content="Compare personal loans from top lenders. Instant eligibility check. Secure & fast approval.">
+<title>LoanGalaxy | Compare Personal Loans Online</title>
+<meta name="description" content="Compare personal loan offers from top lenders. Instant eligibility check, fast approval, secure processing.">
+
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,90 +16,75 @@
     <div class="logo">LoanGalaxy</div>
     <nav class="nav">
       <a href="#products">Products</a>
-      <a href="#why">Why Us</a>
-      <a href="#how">How It Works</a>
+      <a href="#compare">Compare</a>
+      <a href="#faq">FAQ</a>
       <button id="navApply" class="btn">Apply Now</button>
     </nav>
   </div>
 </header>
 
+
+<!-- HERO -->
 <section class="hero">
 
   <canvas id="starCanvas"></canvas>
-  <div class="planet planet-1"></div>
-  <div class="planet planet-2"></div>
 
   <div class="container hero-grid">
 
-    <div class="hero-left">
+    <div class="hero-left reveal">
       <h1>
-        Explore your <span>financial galaxy</span> with confidence.
+        Compare & Apply <span>Personal Loans</span> Confidently
       </h1>
-
       <p>
-        Compare loan offers from multiple lenders. Check eligibility instantly.
-        Apply securely with complete transparency.
+        Check eligibility instantly. Compare lenders transparently.
+        Apply securely with full clarity.
       </p>
-
       <button id="startBtn" class="btn large-btn">
         Check Eligibility
       </button>
     </div>
 
-    <div class="hero-right">
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop"
-           alt="Person thinking about financial future">
+    <div class="hero-right reveal">
+      <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop"
+           alt="Galaxy thinking illustration">
     </div>
 
   </div>
 
   <div class="container">
     <div class="form-wrapper" id="formWrapper">
-      <div class="form-card">
+      <div class="form-card glass">
 
         <div class="form-header">
           <h2>Apply in Minutes</h2>
-          <button id="closeForm" class="collapse-btn">✕</button>
+          <button id="closeForm">✕</button>
         </div>
 
         <form id="leadForm">
 
           <div class="form-row">
-            <input type="text" id="fullName" placeholder="Full Name" required>
-            <input type="email" id="email" placeholder="Email Address" required>
+            <input id="fullName" placeholder="Full Name" required>
+            <input id="email" type="email" placeholder="Email Address" required>
           </div>
 
           <div class="form-row">
-            <input type="tel" id="phone" placeholder="Phone Number" required>
-            <input type="text" id="pan" placeholder="PAN Number" required>
+            <input id="phone" placeholder="Phone Number" required>
+            <input id="pan" placeholder="PAN Number" required>
           </div>
 
           <div class="form-row">
-            <select id="employmentStatus" required>
-              <option value="">Employment Type</option>
-              <option>Salaried</option>
-              <option>Self-Employed</option>
-            </select>
-            <input type="text" id="pincode" placeholder="PIN Code" required>
+            <input id="monthlyIncome" type="number" placeholder="Monthly Income" required>
+            <input id="loanAmount" type="number" placeholder="Loan Amount" required>
           </div>
 
-          <div class="form-row">
-            <input type="number" id="monthlyIncome" placeholder="Monthly Income" required>
-            <input type="number" id="loanAmount" placeholder="Loan Amount Required" required>
-          </div>
-
-          <label class="checkbox">
-            <input type="checkbox" id="agree">
-            I agree to Terms & Privacy Policy
-          </label>
-
-          <button type="submit" id="submitBtn" class="btn full-btn">
+          <button id="submitBtn" class="btn full-btn">
             Submit Application
           </button>
 
-          <p id="statusMsg" class="form-status"></p>
+          <p id="statusMsg"></p>
 
         </form>
+
       </div>
     </div>
   </div>
@@ -106,65 +92,68 @@
 </section>
 
 
-<section class="stats">
-  <div class="container stats-grid">
-    <div>
-      <h3 class="counter" data-target="25">0</h3>
-      <p>Lender Partners</p>
-    </div>
-    <div>
-      <h3 class="counter" data-target="500">0</h3>
-      <p>₹ Crores Facilitated</p>
-    </div>
-    <div>
-      <h3 class="counter" data-target="2">0</h3>
-      <p>Million Applications</p>
-    </div>
+<!-- LENDER LOGOS -->
+<section class="lenders reveal">
+  <div class="container logos">
+    <img src="https://dummyimage.com/120x40/ccc/000&text=Bank+1">
+    <img src="https://dummyimage.com/120x40/ccc/000&text=Bank+2">
+    <img src="https://dummyimage.com/120x40/ccc/000&text=Bank+3">
+    <img src="https://dummyimage.com/120x40/ccc/000&text=NBFC+1">
+    <img src="https://dummyimage.com/120x40/ccc/000&text=NBFC+2">
   </div>
 </section>
 
 
-<section class="explain light">
-  <div class="container explain-grid">
-    <div>
-      <h2>Compare Before You Apply</h2>
-      <p>
-        We help you view loan offers from multiple lenders in one place.
-        Make informed decisions with transparent interest rates and terms.
-      </p>
-    </div>
-    <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=1200&auto=format&fit=crop"
-         alt="Galaxy illustration">
-  </div>
-</section>
-
-
-<section class="testimonials">
+<!-- COMPARISON TABLE -->
+<section id="compare" class="compare reveal">
   <div class="container">
-    <h2>What Our Customers Say</h2>
+    <h2>Compare Loan Features</h2>
 
-    <div class="testimonial-slider" id="testimonialSlider">
-      <div class="testimonial active">
-        <p>"Fast, transparent and super easy process."</p>
-        <span>— Rahul S.</span>
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>LoanGalaxy</th>
+        <th>Others</th>
+      </tr>
+      <tr>
+        <td>Multiple Lenders</td>
+        <td>✔</td>
+        <td>Limited</td>
+      </tr>
+      <tr>
+        <td>Transparent Rates</td>
+        <td>✔</td>
+        <td>Varies</td>
+      </tr>
+      <tr>
+        <td>Secure Processing</td>
+        <td>✔</td>
+        <td>Unclear</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faq" class="faq reveal">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="accordion">
+      <div class="faq-item">
+        <button class="faq-question">Is checking eligibility free?</button>
+        <div class="faq-answer">Yes, eligibility check is completely free.</div>
       </div>
-      <div class="testimonial">
-        <p>"Got my loan approved within days. Highly recommend."</p>
-        <span>— Priya K.</span>
-      </div>
-      <div class="testimonial">
-        <p>"Best platform to compare loan options."</p>
-        <span>— Amit V.</span>
+
+      <div class="faq-item">
+        <button class="faq-question">How long does approval take?</button>
+        <div class="faq-answer">Approvals may happen within hours depending on lender.</div>
       </div>
     </div>
 
   </div>
 </section>
-
-
-<div class="sticky-cta" id="stickyCTA">
-  <button id="stickyApply">Start Application</button>
-</div>
 
 
 <footer>
