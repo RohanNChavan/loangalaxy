@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LoanGalaxy | Modern Credit Simplified</title>
+<title>LoanGalaxy | Compare & Apply Personal Loans Online</title>
+<meta name="description" content="Compare personal loans from top banks. Instant eligibility check. Fast approval. Secure application process.">
 <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -14,6 +15,7 @@
     <div class="logo">LoanGalaxy</div>
     <nav class="nav">
       <a href="#products">Products</a>
+      <a href="#why">Why Choose Us</a>
       <a href="#how">How It Works</a>
       <button id="navApply" class="btn">Apply Now</button>
     </nav>
@@ -28,21 +30,19 @@
   <div class="container hero-content">
 
     <h1>
-      Navigate the universe of <span>modern credit.</span>
+      Compare & Apply <span>Personal Loans</span> Instantly
     </h1>
 
     <p>
-      LoanGalaxy structures your personal loan journey with clarity,
-      speed and intelligent assistance.
+      Check eligibility, compare offers from multiple lenders,
+      and apply seamlessly — all in one secure platform.
     </p>
 
     <div class="hero-actions">
-      <button id="startBtn" class="btn">Start Application</button>
+      <button id="startBtn" class="btn large-btn">Check Eligibility</button>
     </div>
 
-    <!-- FORM -->
     <div class="form-wrapper" id="formWrapper">
-
       <div class="form-card">
 
         <div class="form-header">
@@ -51,47 +51,31 @@
         </div>
 
         <form id="leadForm">
-
           <input type="text" id="fullName" placeholder="Full Name" required>
-          <div class="error" id="errFullName"></div>
-
           <input type="email" id="email" placeholder="Email Address" required>
-          <div class="error" id="errEmail"></div>
-
           <input type="tel" id="phone" placeholder="Phone Number" required>
-          <div class="error" id="errPhone"></div>
-
           <input type="text" id="pan" placeholder="PAN Number" required>
-          <div class="error" id="errPan"></div>
 
           <select id="employmentStatus" required>
             <option value="">Select Employment Type</option>
             <option>Salaried</option>
             <option>Self-Employed</option>
           </select>
-          <div class="error" id="errEmployment"></div>
 
           <input type="text" id="pincode" placeholder="PIN Code" required>
-          <div class="error" id="errPincode"></div>
-
           <input type="number" id="monthlyIncome" placeholder="Monthly Income" required>
-          <div class="error" id="errIncome"></div>
-
           <input type="number" id="loanAmount" placeholder="Loan Amount Required" required>
-          <div class="error" id="errLoan"></div>
 
           <label class="checkbox">
             <input type="checkbox" id="agree">
             I agree to Terms & Privacy Policy
           </label>
-          <div class="error" id="errAgree"></div>
 
           <button type="submit" id="submitBtn" class="btn full-btn">
             Submit Application
           </button>
 
           <p id="statusMsg" class="form-status"></p>
-
         </form>
 
       </div>
@@ -100,45 +84,102 @@
   </div>
 </section>
 
-<section class="products" id="products">
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div>
+      <h3>25+ Lenders</h3>
+      <p>Partnered Banks & NBFCs</p>
+    </div>
+    <div>
+      <h3>₹500Cr+</h3>
+      <p>Loans Facilitated</p>
+    </div>
+    <div>
+      <h3>2M+</h3>
+      <p>Applications Processed</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="products light" id="products">
   <div class="container">
-    <h2>Explore Our Financial Universe</h2>
+    <h2>Loan Products We Help You Access</h2>
 
     <div class="product-grid">
 
       <div class="product-card">
-        <h3>Stellar Personal Credit</h3>
-        <p>Access structured personal funding up to ₹25L.</p>
+        <h3>Personal Loan</h3>
+        <p>Unsecured loans up to ₹25L with competitive interest rates.</p>
       </div>
 
       <div class="product-card">
-        <h3>Orbit Micro Loan</h3>
-        <p>Instant small-ticket loans for urgent needs.</p>
+        <h3>Business Loan</h3>
+        <p>Funding solutions for growing enterprises and MSMEs.</p>
       </div>
 
       <div class="product-card">
-        <h3>Galaxy Credit Card</h3>
-        <p>Compare and choose cards from top banks.</p>
-      </div>
-
-      <div class="product-card">
-        <h3>Cosmic Business Funding</h3>
-        <p>Unsecured funding for growing enterprises.</p>
-      </div>
-
-      <div class="product-card">
-        <h3>Score Booster Pro</h3>
-        <p>Improve your credit profile strategically.</p>
-      </div>
-
-      <div class="product-card">
-        <h3>Aurum Gold Loan</h3>
-        <p>Unlock liquidity against gold with transparent rates.</p>
+        <h3>Credit Cards</h3>
+        <p>Compare cards from top banks with exclusive rewards.</p>
       </div>
 
     </div>
   </div>
 </section>
+
+
+<section class="why" id="why">
+  <div class="container">
+    <h2>Why Choose LoanGalaxy?</h2>
+
+    <div class="why-grid">
+
+      <div>
+        <h3>Compare Multiple Offers</h3>
+        <p>View loan options from leading lenders before applying.</p>
+      </div>
+
+      <div>
+        <h3>Fast & Transparent</h3>
+        <p>Clear process, no hidden charges, complete visibility.</p>
+      </div>
+
+      <div>
+        <h3>Secure Data Handling</h3>
+        <p>Encrypted processing with strict privacy safeguards.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="how light" id="how">
+  <div class="container">
+    <h2>How It Works</h2>
+
+    <div class="steps">
+
+      <div>
+        <h3>1. Check Eligibility</h3>
+        <p>Fill basic details in under 2 minutes.</p>
+      </div>
+
+      <div>
+        <h3>2. Compare Offers</h3>
+        <p>View lender options tailored to your profile.</p>
+      </div>
+
+      <div>
+        <h3>3. Complete Application</h3>
+        <p>Upload documents and proceed for approval.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <footer>
   © <span id="year"></span> LoanGalaxy. All rights reserved.
